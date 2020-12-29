@@ -11,8 +11,9 @@ def get_accuracy_on_samples(instantiable_model, X, y, model_params_dict=None,
     set are sampled at random from the provided data; then a new model instance is created and trained on the
     train set. The trained instance is then tested on the held-out test data for the particular iteration. The
     method returns a dict with the accuracies on test data for each iteration. 
-    Parameters
-    ----------
+    
+    Parameters:
+    
     instantiable_model: a function that returns a new model instance. The model must provide fit and predict methods.
     
     X: the model input.
@@ -38,7 +39,7 @@ def get_accuracy_on_samples(instantiable_model, X, y, model_params_dict=None,
     verbose: if True details on the samples and train/test size will be printed.
     
     
-    returns: a dictionary of the form {iteration_number_i: accuracy_on_test_for_iteration_i}
+    Returns: a dictionary of the form {iteration_number_i: accuracy_on_test_for_iteration_i}
     """
     
     assert 0<sample_ratio and sample_ratio<=1
@@ -103,7 +104,16 @@ def get_accuracy_on_samples(instantiable_model, X, y, model_params_dict=None,
         
 
 def get_confidence_interval(acc_dict, alpha, verbose=True):
+    """Computes the confidence interval on the provided data for the given alpha.
     
+    Parameters:
+    
+    acc_dict: dictionary of accuracies output of the method get_accuracy_on_samples from this repo.
+    
+    alpha: specification of the confidence interval. The confidence is given by (100-alpha)%.
+    
+    Returns: lower bound and upper bound for classification accuracy.
+    """
     assert isinstance(acc_dict, dict)
     assert 0 < alpha and alpha < 15
     
