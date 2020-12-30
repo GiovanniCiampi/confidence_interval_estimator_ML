@@ -2,7 +2,7 @@
 This repo contains code to perform Bootstrap Confidence Intervals estimation (a.k.a. Monte Carlo Confidence Interval or Empirical Confidence Interval estimation) for Machine Learing models.
 
 # Colab Demo 
-You can easily try this tool in Google Colab by clicking on the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wBWNSMH64q8uDk9vr15uT-_QQqFz752X)
+You can easily try this tool in Google Colab by clicking on the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wBWNSMH64q8uDk9vr15uT-_QQqFz752X?usp=sharing)
 
 # Quickstart 
 ```
