@@ -64,7 +64,7 @@ def get_accuracy_on_samples(instantiable_model, X, y, model_params_dict=None,
     
     if verbose:
         print(f"Evaluating model on {n_iterations} samples of (X, y).")
-        print(f"Each sample will contain {samples_size} elements from X, out of which {train_size} elements")
+        print(f"Each sample will contain {samples_size} elements from (X, y), out of which {train_size} elements")
         print(f"will be used to train the model, while the remaining {test_size} elements to test its accuracy.")
     
     for idx in tqdm(range(n_iterations)):
