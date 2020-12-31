@@ -6,14 +6,14 @@ You can easily try this tool in Google Colab by clicking on the following badge:
 
 # Quickstart 
 ```
-from bootstrap_confindence_intervals import get_accuracy_on_samples, get_confidence_interval
+>>> from bootstrap_confindence_intervals import get_accuracy_on_samples, get_confidence_interval
 
-test_accuracies = get_accuracy_on_samples(get_classifier_instance, X, y, n_iterations=100, sample_ratio=0.7,
-                             train_ratio=0.8, random_seed=None, sample_with_replacement=True, verbose=False)
+>>> test_accuracies = get_accuracy_on_samples(get_classifier_instance, X, y, n_iterations=100, sample_ratio=0.7,
+                             train_ratio=0.8, random_seed=None, sample_with_replacement=True, verbose=False) 
                              
-get_confidence_interval(test_accuracies, alpha=5, verbose=True)
->>>From the given data, with 95% probability the accuracy of the model is 92.86% +/-7.14.
->>>{'lower_bound': 0.85714285714, 'median': 0.95238095, 'upper_bound': 1.0}
+>>> get_confidence_interval(test_accuracies, alpha=5, verbose=True)
+ From the given data, with 95% probability the accuracy of the model is 92.86% +/-7.14.
+ {'lower_bound': 0.85714285714, 'median': 0.95238095, 'upper_bound': 1.0}
 ```
 
 # Further Details
