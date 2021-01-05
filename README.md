@@ -1,5 +1,5 @@
 # confidence_interval_estimator_ML
-This repo contains code to perform estimation of Confidence Intervals both parametric and non-parametric (a.k.a. Monte Carlo Confidence Interval or Empirical Confidence Interval estimation) for Machine Learing models.
+This repo contains code to perform estimation of Confidence Intervals both parametrically and non-parametrically (a.k.a. Monte Carlo Confidence Interval or Empirical Confidence Interval estimation) for Machine Learing models.
 
 # Colab Demo 
 You can easily try this tool in Google Colab by clicking on the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16EwUmq9NBiytpS6JoN22l7zDqzqTb_-w?usp=sharing)
@@ -14,7 +14,7 @@ You can easily try this tool in Google Colab by clicking on the following badge:
  (0.9773132867658845, 0.02268671323411553)
  
 >>> # Non-Parametric Estimation:
->>> test_accuracies = cie.get_accuracy_on_samples(get_classifier_instance, X, y, n_iterations=100, sample_ratio=1,
+>>> test_accuracies = cie.get_accuracy_samples(get_classifier_instance, X, y, n_iterations=100, sample_ratio=1,
                              train_ratio=0.8, random_seed=None, sample_with_replacement=True, verbose=False) 
                              
 >>> cie.nonparametric_confidence_interval(test_accuracies, confidence_level=.9)
