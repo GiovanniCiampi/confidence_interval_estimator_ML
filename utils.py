@@ -45,7 +45,8 @@ def parametric_confidence_interval(confidence_level, mean, sample_size, verbose=
     if verbose: 
         rounded_confidence_level = round(confidence_level, 3)
         rounded_r = round(r, 3)
-        print(f"With {rounded_confidence_level}% confidence the accuracy of the model is in {mean}% +/-{rounded_r}.")
+        rounded_mean = round(mean*100, 3)
+        print(f"With {rounded_confidence_level}% confidence the accuracy of the model is in {rounded_mean}% +/-{rounded_r}.")
     return mean, r
 
 def get_accuracy_samples(instantiable_model, X, y, model_params_dict=None,
