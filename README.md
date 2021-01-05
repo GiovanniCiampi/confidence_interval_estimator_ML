@@ -10,7 +10,7 @@ You can easily try this tool in Google Colab by clicking on the following badge:
 >>> # Parametric Estimation:
 >>> cie.parametric_confidence_interval(confidence_level=.95, mean=model_accuracy, sample_size=sample_size, verbose=True)
  Computing C.I. assuming the data follow a standard normal distribution
- With 95% confidence the accuracy of the model is in 0.977% +/-0.023.
+ With 95.0% confidence the accuracy of the model is in 0.977 +/-0.023.
  (0.9773132867658845, 0.02268671323411553)
  
 >>> # Non-Parametric Estimation:
@@ -18,7 +18,7 @@ You can easily try this tool in Google Colab by clicking on the following badge:
                              train_ratio=0.8, random_seed=None, sample_with_replacement=True, verbose=False) 
                              
 >>> cie.nonparametric_confidence_interval(accs, .9)
- From the given data, with 90.0% confidence the accuracy of the model is in 95.95% +/-4.05.
+ From the given data, with 90.0% confidence the accuracy of the model is in 0.959 +/-4.05.
  (0.9595, 0.04050000000000009)
 ```
 
