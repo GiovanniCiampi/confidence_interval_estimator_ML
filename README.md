@@ -2,7 +2,7 @@
 This repo contains code to perform estimation of Confidence Intervals both parametrically and non-parametrically (a.k.a. Monte Carlo Confidence Interval/Empirical Confidence Interval/Bootstrap Confidence Interval estimation) for Machine Learing models.
 
 # Colab Demo 
-You can easily try this tool in Google Colab by clicking on the following badge: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/16EwUmq9NBiytpS6JoN22l7zDqzqTb_-w?usp=sharing)
+You can easily try this tool in Google Colab by clicking on the following badge: [![Open In Colab](https://drive.google.com/file/d/1tkzLOkiOGj7oaVvXQLGHuoRSQ0zVbYZb/view?usp=sharing)
 
 # Quickstart 
 ```
